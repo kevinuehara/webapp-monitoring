@@ -1,4 +1,4 @@
-# WebApp Monitoring
+# WebApp Monitoring Example
 
 This project is a example of a monitored application, using Sentry, Hotjar and Amplitude as providers.
 
