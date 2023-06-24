@@ -7,6 +7,64 @@
   resolved "https://registry.npmjs.org/@alloc/quick-lru/-/quick-lru-5.2.0.tgz#7bf68b20c0a350f936915fcae06f58e32007ce30"
   integrity sha512-UrcABB+4bUrFABwbluTIBErXwvbsU/V7TZWfmbgJfbkwiBuziS9gxdODUyuiecfdGQ85jglMW6juS3+z5TsKLw==
 
+"@amplitude/analytics-browser@^2.1.0":
+  version "2.1.0"
+  resolved "https://registry.npmjs.org/@amplitude/analytics-browser/-/analytics-browser-2.1.0.tgz#355b3f034070a0a1ccf4bdd672c469089cadfb9e"
+  integrity sha512-9ejvQUR1mrD3Lc8eR03fMDlrfoBZmaiphmw8CZ/qJaKNJ/bu/rh3tBlmvCn1lG/ibxT24Ggtkqz93Xc/n3x0Yg==
+  dependencies:
+    "@amplitude/analytics-client-common" "^2.0.2"
+    "@amplitude/analytics-core" "^2.0.2"
+    "@amplitude/analytics-types" "^2.1.0"
+    "@amplitude/plugin-page-view-tracking-browser" "^2.0.2"
+    "@amplitude/plugin-web-attribution-browser" "^2.0.2"
+    tslib "^2.4.1"
+
+"@amplitude/analytics-client-common@^2.0.2":
+  version "2.0.2"
+  resolved "https://registry.npmjs.org/@amplitude/analytics-client-common/-/analytics-client-common-2.0.2.tgz#420a16ded0bebb73c9052a1549dab472dc31a34c"
+  integrity sha512-Dqe9saZ5ag/ZknHlCYiu6oBOVjIU22Ta5EFtqI/lUm0XqaEdYBGduvlw5hwd8x7nmS6+5r4ip/nW1UoaciucDQ==
+  dependencies:
+    "@amplitude/analytics-connector" "^1.4.8"
+    "@amplitude/analytics-core" "^2.0.2"
+    "@amplitude/analytics-types" "^2.1.0"
+    tslib "^2.4.1"
+
+"@amplitude/analytics-connector@^1.4.8":
+  version "1.4.8"
+  resolved "https://registry.npmjs.org/@amplitude/analytics-connector/-/analytics-connector-1.4.8.tgz#dd801303db2662bc51be7e0194eeb8bd72267c42"
+  integrity sha512-dFW7c7Wb6Ng7vbmzwbaXZSpqfBx37ukamJV9ErFYYS8vGZK/Hkbt3M7fZHBI4WFU6CCwakr2ZXPme11uGPYWkQ==
+
+"@amplitude/analytics-core@^2.0.2":
+  version "2.0.2"
+  resolved "https://registry.npmjs.org/@amplitude/analytics-core/-/analytics-core-2.0.2.tgz#0eb6af356b6dfcc3986d8216930c76bac36604ed"
+  integrity sha512-9FHRRrSiVlg77jytV3ZKMMa/VMIUcR7QJejJDcwLTEbZLU9sWUH+y+msLyWpNu2h1bLJBNw1skcD1SvCGm3fnQ==
+  dependencies:
+    "@amplitude/analytics-types" "^2.1.0"
+    tslib "^2.4.1"
+
+"@amplitude/analytics-types@^2.1.0":
+  version "2.1.0"
+  resolved "https://registry.npmjs.org/@amplitude/analytics-types/-/analytics-types-2.1.0.tgz#f5b1f2df52ec23ef7876a828c414be09e5e9d33f"
+  integrity sha512-HG6q+IfEjUg9K+em01+2uccebZVs4tiyMIGpBJ0U7G3swx3lEL7DtFn3uzDzSsp3QOc9rRfJglYy2tNkJRUo7g==
+
+"@amplitude/plugin-page-view-tracking-browser@^2.0.2":
+  version "2.0.2"
+  resolved "https://registry.npmjs.org/@amplitude/plugin-page-view-tracking-browser/-/plugin-page-view-tracking-browser-2.0.2.tgz#22e1c1bdabeca6ff1814312e29dba13c9a82b119"
+  integrity sha512-tYrQ5wwf3qeEhM173lKHXjdl2pOBd6HsjDpelfvzZRLuirGpiGDQZr52WQgKFP4iIZGIkiKtG//wNdswSJ926w==
+  dependencies:
+    "@amplitude/analytics-client-common" "^2.0.2"
+    "@amplitude/analytics-types" "^2.1.0"
+    tslib "^2.4.1"
+
+"@amplitude/plugin-web-attribution-browser@^2.0.2":
+  version "2.0.2"
+  resolved "https://registry.npmjs.org/@amplitude/plugin-web-attribution-browser/-/plugin-web-attribution-browser-2.0.2.tgz#50849e71f2bfb740c55abab9907487259e75af77"
+  integrity sha512-5hCYyH4zVisuQXDpUoj3E8QR3HQt6iggXxB/JYGJac4a9h8aun6iKJHHHCfpEC4V46xVTusDJ/KKINKhcypRSg==
+  dependencies:
+    "@amplitude/analytics-client-common" "^2.0.2"
+    "@amplitude/analytics-types" "^2.1.0"
+    tslib "^2.4.1"
+
 "@ampproject/remapping@^2.2.0":
   version "2.2.1"
   resolved "https://registry.npmjs.org/@ampproject/remapping/-/remapping-2.2.1.tgz#99e8e11851128b8702cd57c33684f1d0f260b630"
@@ -438,70 +496,6 @@
   version "1.7.0"
   resolved "https://registry.npmjs.org/@remix-run/router/-/router-1.7.0.tgz#550a8d5760b78efc5d60f62b5829b0f74c1fde81"
   integrity sha512-Eu1V3kz3mV0wUpVTiFHuaT8UD1gj/0VnoFHQYX35xlslQUpe8CuYoKFn9d4WZFHm3yDywz6ALZuGdnUPKrNeAw==
-
-"@sentry-internal/tracing@7.54.0":
-  version "7.54.0"
-  resolved "https://registry.npmjs.org/@sentry-internal/tracing/-/tracing-7.54.0.tgz#eeb10ee72426d08669a7706faa4264f1ec02c71d"
-  integrity sha512-JsyhZ0wWZ+VqbHJg+azqRGdYJDkcI5R9+pnkO6SzbzxrRewqMAIwzkpPee3oI7vG99uhMEkOkMjHu0nQGwkOQw==
-  dependencies:
-    "@sentry/core" "7.54.0"
-    "@sentry/types" "7.54.0"
-    "@sentry/utils" "7.54.0"
-    tslib "^1.9.3"
-
-"@sentry/browser@7.54.0":
-  version "7.54.0"
-  resolved "https://registry.npmjs.org/@sentry/browser/-/browser-7.54.0.tgz#7fe331c776d02b5c902733aa41dcbfac7bef1ae6"
-  integrity sha512-EvLAw03N9WE2m1CMl2/1YMeIs1icw9IEOVJhWmf3uJEysNJOFWXu6ZzdtHEz1E6DiJYhc1HzDya0ExZeJxNARA==
-  dependencies:
-    "@sentry-internal/tracing" "7.54.0"
-    "@sentry/core" "7.54.0"
-    "@sentry/replay" "7.54.0"
-    "@sentry/types" "7.54.0"
-    "@sentry/utils" "7.54.0"
-    tslib "^1.9.3"
-
-"@sentry/core@7.54.0":
-  version "7.54.0"
-  resolved "https://registry.npmjs.org/@sentry/core/-/core-7.54.0.tgz#8c4cb8800f8df708b3f3f6483026bb9a02820014"
-  integrity sha512-MAn0E2EwgNn1pFQn4qxhU+1kz6edullWg6VE5wCmtpXWOVw6sILBUsQpeIG5djBKMcneJCdOlz5jeqcKPrLvZQ==
-  dependencies:
-    "@sentry/types" "7.54.0"
-    "@sentry/utils" "7.54.0"
-    tslib "^1.9.3"
-
-"@sentry/react@^7.54.0":
-  version "7.54.0"
-  resolved "https://registry.npmjs.org/@sentry/react/-/react-7.54.0.tgz#0d9e1b902fd9ded713ac46a623f6a490e4aa2c8a"
-  integrity sha512-qUbwmRRpTh05m2rbC8A2zAFQYsoHhwIpxT5UXxh0P64ZlA3cSg1/DmTTgwnd1l+7gzKrc31UikXQ4y0YDbMNKg==
-  dependencies:
-    "@sentry/browser" "7.54.0"
-    "@sentry/types" "7.54.0"
-    "@sentry/utils" "7.54.0"
-    hoist-non-react-statics "^3.3.2"
-    tslib "^1.9.3"
-
-"@sentry/replay@7.54.0":
-  version "7.54.0"
-  resolved "https://registry.npmjs.org/@sentry/replay/-/replay-7.54.0.tgz#f0f44f9413ceefd1809bf1665e82315927ae08db"
-  integrity sha512-C0F0568ybphzGmKGe23duB6n5wJcgM7WLYhoeqW3o2bHeqpj1dGPSka/K3s9KzGaAgzn1zeOUYXJsOs+T/XdsA==
-  dependencies:
-    "@sentry/core" "7.54.0"
-    "@sentry/types" "7.54.0"
-    "@sentry/utils" "7.54.0"
-
-"@sentry/types@7.54.0":
-  version "7.54.0"
-  resolved "https://registry.npmjs.org/@sentry/types/-/types-7.54.0.tgz#bfee18107a78e290e6c8ad41646e2b9d9dd95234"
-  integrity sha512-D+i9xogBeawvQi2r0NOrM7zYcUaPuijeME4O9eOTrDF20tj71hWtJLilK+KTGLYFtpGg1h+9bPaz7OHEIyVopg==
-
-"@sentry/utils@7.54.0":
-  version "7.54.0"
-  resolved "https://registry.npmjs.org/@sentry/utils/-/utils-7.54.0.tgz#a3acb5e25a1409cbca7b46d6356d7417a253ea9a"
-  integrity sha512-3Yf5KlKjIcYLddOexSt2ovu2TWlR4Fi7M+aCK8yUTzwNzf/xwFSWOstHlD/WiDy9HvfhWAOB/ukNTuAeJmtasw==
-  dependencies:
-    "@sentry/types" "7.54.0"
-    tslib "^1.9.3"
 
 "@types/json-schema@^7.0.9":
   version "7.0.12"
@@ -1252,13 +1246,6 @@ has@^1.0.3:
   dependencies:
     function-bind "^1.1.1"
 
-hoist-non-react-statics@^3.3.2:
-  version "3.3.2"
-  resolved "https://registry.npmjs.org/hoist-non-react-statics/-/hoist-non-react-statics-3.3.2.tgz#ece0acaf71d62c2969c2ec59feff42a4b1a85b45"
-  integrity sha512-/gGivxi8JPKWNm/W0jSmzcMPpfpPLc3dY/6GxhX2hQ9iGj3aDfklV4ET7NjKpSinLpJ5vafa9iiGIEZg10SfBw==
-  dependencies:
-    react-is "^16.7.0"
-
 ignore@^5.2.0:
   version "5.2.4"
   resolved "https://registry.npmjs.org/ignore/-/ignore-5.2.4.tgz#a291c0c6178ff1b960befe47fcdec301674a6324"
@@ -1654,11 +1641,6 @@ react-dom@^18.2.0:
     loose-envify "^1.1.0"
     scheduler "^0.23.0"
 
-react-is@^16.7.0:
-  version "16.13.1"
-  resolved "https://registry.npmjs.org/react-is/-/react-is-16.13.1.tgz#789729a4dc36de2999dc156dd6c1d9c18cea56a4"
-  integrity sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==
-
 react-refresh@^0.14.0:
   version "0.14.0"
   resolved "https://registry.npmjs.org/react-refresh/-/react-refresh-0.14.0.tgz#4e02825378a5f227079554d4284889354e5f553e"
@@ -1890,10 +1872,15 @@ ts-interface-checker@^0.1.9:
   resolved "https://registry.npmjs.org/ts-interface-checker/-/ts-interface-checker-0.1.13.tgz#784fd3d679722bc103b1b4b8030bcddb5db2a699"
   integrity sha512-Y/arvbn+rrz3JCKl9C4kVNfTfSm2/mEp5FSz5EsZSANGPSlQrpRI5M4PKF+mJnE52jOO90PnPSc3Ur3bTQw0gA==
 
-tslib@^1.8.1, tslib@^1.9.3:
+tslib@^1.8.1:
   version "1.14.1"
   resolved "https://registry.npmjs.org/tslib/-/tslib-1.14.1.tgz#cf2d38bdc34a134bcaf1091c41f6619e2f672d00"
   integrity sha512-Xni35NKzjgMrwevysHTCArtLDpPvye8zV/0E4EyYn43P7/7qvQwPh9BGkHewbMulVntbigmcT7rdX3BNo9wRJg==
+
+tslib@^2.4.1:
+  version "2.5.3"
+  resolved "https://registry.npmjs.org/tslib/-/tslib-2.5.3.tgz#24944ba2d990940e6e982c4bea147aba80209913"
+  integrity sha512-mSxlJJwl3BMEQCUNnxXBU9jP4JBktcEGhURcPR6VQVlnP0FdDEsIaz0C35dXNGLyRfrATNofF0F5p2KPxQgB+w==
 
 tsutils@^3.21.0:
   version "3.21.0"

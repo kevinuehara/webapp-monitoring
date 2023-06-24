@@ -1,10 +1,11 @@
 import { Content } from "../components/Content";
 import { CustomButton } from "../components/CustomButton";
 import { Header } from "../components/Header";
+import { trackEvent } from "../integrations/amplitude";
 
 export const Home = () => {
-  const handleTrackSentryError = () => {
-    throw new Error("Hi! I'm an error!");
+  const handleEventAmplitude = () => {
+    trackEvent("Clicked on Button to Send Event");
   };
 
   return (
@@ -16,8 +17,8 @@ export const Home = () => {
           Demo Application to Monitoring WebApps
         </h2>
         <CustomButton
-          text="Track me on Sentry"
-          onClick={handleTrackSentryError}
+          text="Send Amplitude Event"
+          onClick={handleEventAmplitude}
         />
       </Content>
     </>
