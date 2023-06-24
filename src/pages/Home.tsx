@@ -20,14 +20,17 @@ export const Home = () => {
         <h2 className="mb-2 text-gray-700">
           Demo Application to Monitoring WebApps
         </h2>
-        <CustomButton
-          text="Send Amplitude Event"
-          onClick={handleEventAmplitude}
-        />
-        <CustomButton
-          text="Track me on Sentry"
-          onClick={handleTrackSentryError}
-        />
+        <div className="flex flex-col w-2/4">
+          <CustomButton
+            text="Send Amplitude Event"
+            onClick={handleEventAmplitude}
+          />
+          <CustomButton
+            text="Track me on Sentry"
+            onClick={handleTrackSentryError}
+            style="bg-red-700 hover:bg-red-500 mt-2"
+          />
+        </div>
       </Content>
     </>
   );
