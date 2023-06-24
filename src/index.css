@@ -1,21 +1,10 @@
-:root {
-  font-family: Arial, Helvetica, sans-serif;
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-.button-error {
-  background-color: #e11d48;
-  font-size: large;
-  color: white;
-  width: 150px;
-  height: 100px;
-  border: none;
-  border-radius: 4px;
-}
-
-.button-error:hover {
-  background-color: #f43f5e;
-  cursor: pointer
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

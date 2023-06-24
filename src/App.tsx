@@ -1,17 +1,16 @@
-import { initializeSentry } from "./sentry";
-
-initializeSentry();
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { Home } from "./pages/Home";
+import { About } from "./pages/About";
 
 function App() {
-  const handleError = () => {
-    throw new Error("Hi! I'm an error");
-  };
-
   return (
     <>
-      <button className="button-error" onClick={handleError}>
-        Click to Explode
-      </button>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" index element={<Home />} />
+          <Route path="about" element={<About />} />
+        </Routes>
+      </BrowserRouter>
     </>
   );
 }
