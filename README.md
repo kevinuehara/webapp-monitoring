@@ -2,6 +2,10 @@
 
 This project is a example of a monitored application, using Sentry, Hotjar and Amplitude as providers.
 
+![Project Home Interface](public/project.png)
+![Project About Interface](public/about.png)
+![Project About Interface With Hotjar Feedback](public/about-feedback.png)
+
 **Sentry**: Open source project, sentry provides an **error tracking** in your web application. For software teams, Sentry is essential for monitoring application code health. From Error tracking to Performance monitoring, developers can see clearer, solve quicker, and learn continuously about their applications
 
 **Amplitude**: Amplitude is a product analytics platform that helps businesses to track visitors with the help of collaborative analytics. The platform uses behavioral reports to understand users' interactions with products and provides insights to accelerate work on a real-time basis.
