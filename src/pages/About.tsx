@@ -1,7 +1,6 @@
 import { Content } from "../components/Content";
 import { Header } from "../components/Header";
 import { SocialMedia } from "../components/SocialMedia";
-import { LinkedinIcon } from "../components/icons";
 
 export const About = () => {
   return (
